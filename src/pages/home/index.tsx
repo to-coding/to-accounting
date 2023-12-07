@@ -1,12 +1,12 @@
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import Chart from "../../components/dashboard/Chart";
-import Deposits from "../../components/dashboard/Deposits";
-import Orders from "../../components/dashboard/Orders";
-import * as React from "react";
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import Chart from '../../components/dashboard/Chart';
+import Deposits from '../../components/dashboard/Deposits';
+import Orders from '../../components/dashboard/Orders';
+import * as React from 'react';
 
 const Home = () => {
 
@@ -60,7 +60,7 @@ const Home = () => {
                 </Grid>
             </Grid>
         </Container>
-    </Box>)
-}
+    </Box>);
+};
 
 export {Home as HomeBoard};

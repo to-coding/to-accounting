@@ -15,24 +15,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import {mainListItems, secondaryListItems} from './listItems';
-import {BrowserRouter, Routes} from "react-router-dom";
-import {HomeBoard} from "../../pages/home";
-import {Route} from "react-router";
+import {BrowserRouter, Routes} from 'react-router-dom';
+import {HomeBoard} from '../../pages/home';
+import {Route} from 'react-router';
 
-function Copyright(props: any) {
-    return (
-        <Typography variant="body2" color="text.secondary" align="center" {...props}>
-            {'Copyright © '}
-            <Link color="inherit" href="https://mui.com/">
-                Your Website
-            </Link>{' '}
-            {new Date().getFullYear()}
-            {'.'}
-        </Typography>
-    );
-}
-
-const drawerWidth: number = 240;
+const drawerWidth = 240;
 
 interface AppBarProps extends MuiAppBarProps {
     open?: boolean;
@@ -82,13 +69,11 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
     }),
 );
 
-
 export default function Dashboard() {
     const [open, setOpen] = React.useState(true);
     const toggleDrawer = () => {
         setOpen(!open);
     };
-
 
     return (
             <BrowserRouter>

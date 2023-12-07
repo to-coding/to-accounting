@@ -1,12 +1,12 @@
 import * as React from 'react';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import AssignmentIcon from '@mui/icons-material/Assignment';
-import {NavLink} from "react-router-dom";
+import {NavLink} from 'react-router-dom';
+
 interface NavLinkProps {
     isActive: boolean;
     isPending: boolean;
@@ -14,11 +14,11 @@ interface NavLinkProps {
 }
 const navStyle = ({ isActive, isPending, isTransitioning }: NavLinkProps) => {
     return {
-        fontWeight: isActive ? "bold" : "",
-        color: isActive ? "#008cff" : "#00000050",
-        viewTransitionName: isTransitioning ? "slide" : "",
+        fontWeight: isActive ? 'bold' : '',
+        color: isActive ? '#008cff' : '#00000050',
+        viewTransitionName: isTransitioning ? 'slide' : '',
     };
-}
+};
 export const mainListItems = (
     <React.Fragment>
         <ListItemButton>
